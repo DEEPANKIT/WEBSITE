@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>SOCIALIZE</title>
+</head>
+<style type="text/css">
+body{
+    background: #d8d8d8;
+}
+.social-menu ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.social-menu ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+.social-menu ul li .fa{
+    font-size: 30px;
+    line-height: 60px;
+    transition: 0.6s;
+    color: #000;
+}
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0,0, 0,0.5);
+}
+.social-menu ul li a:hover{
+    cursor: pointer;
+    transform: rotate(0deg) skew(0deg) translate(0,-10px);
+}
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: #0077B5;
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #e4405f;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #cd201f;
+}
+.social-menu ul li:nth-child(4) a:hover{
+    background-color: #cd651f;
+}
+</style>
+<body>
+    <div class="social-menu">
+        <ul>
+            <li><a href="#"><i class="fa fa-envelope-open"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <!-- <li><a href="#"><i class="fa fa-patreon"></i></a></li> -->
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+@font-face { font-family: Norwester; src: url('../font/norwester.ttf'); } 
+#mainCanvas{
+    position: fixed;
+    opacity: 0.8;
+    z-index: 0;
+}
+#logo{
+    font-family: Norwester;
+    z-index: 3;
+    position: fixed;
+}
+.logoLarge{
+    font-family: Norwester;
+    font-size: 80px;
+}
+.logoSmall{
+    font-family: Norwester;
+    top: 25px;
+    left: 25px;
+    height: 25px;
+    font-size: 25px;
+    animation-name: logoAnim;
+    animation-duration: 1000ms;
+}
+#loader{
+    height: 100px;
+    width: 100px;
+    background-image: url("../svg/loading.svg");
+}
+header{
+    position: fixed;
+    z-index: 2;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.75;
+}
+#artStripCont{
+    margin-top: 100px;
+    max-width: 100%;
+    height: 100%;
+    animation-name: artStripAnim;
+    animation-duration: 1200ms;
+}
+.artStrip{
+    height: 200px;
+    max-width: 100%;
+    padding: 50px;
+    margin-bottom: 40px;
+}
+.artStripHead{
+    font-size: 50px;
+}
+.hori{
+    display: flex;
+    flex-flow: row;
+}
+.verti{
+    display: flex;
+    flex-flow: column;
+}
+.part{
+    scroll-snap-type: x mandatory;
+    min-height: 100%;
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+    height: 200px;
+    padding: 0;
+    margin-bottom: 125px;
+    background-color: transparent;
+    position: relative;
+}
+.center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#cont{
+    position: relative;
+    display: block;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    margin-bottom: -100px;
+}
+
+@keyframes logoAnim{
+    0%{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 80px;
+    }
+    100%{
+        top: 25px;
+        left: 25px;
+    }
+}
+@keyframes artStripAnim{
+    0%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
