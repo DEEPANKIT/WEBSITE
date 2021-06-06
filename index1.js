@@ -45,7 +45,7 @@ function doReq(type = '', link = '', body = '', callback = function (res = '') {
       httpReq.send(body);*/
     setTimeout(() => {
         callback(JSON.stringify({
-            data: [{ head: "Mother Fucker found to be guilty", body: "mf" },
+            data: [{ head: "Hello World", body: "mf" },
             { head: "hello", body: "mf" },
             { head: "hello", body: "mf" }]
         }));
